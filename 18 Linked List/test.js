@@ -1,4 +1,5 @@
 const L = require('./index');
+
 const List = L.LinkedList;
 const Node = L.Node;
 
@@ -10,7 +11,7 @@ test('Node is a class', () => {
   expect(typeof Node.prototype.constructor).toEqual('function');
 });
 
-describe.skip('A Node', () => {
+describe('A Node', () => {
   test('has properties "data" and "next"', () => {
     const node = new Node('a', 'b');
     expect(node.data).toEqual('a');
